@@ -2,8 +2,6 @@
 USER-AGENT,*youtube*
 USER-AGENT,YouTube*
 DOMAIN-KEYWORD,youtube
-DOMAIN-SUFFIX,googlevideo.com,force-remote-dns
-DOMAIN-SUFFIX,gvt2.com,force-remote-dns
-DOMAIN-SUFFIX,youtu.be,force-remote-dns
-DOMAIN-SUFFIX,youtube.com,force-remote-dns
-DOMAIN,youtubei.googleapis.com,force-remote-dns
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,youtu.be
