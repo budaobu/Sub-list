@@ -1,7 +1,7 @@
 # Sub-list
 subscription
 
-# 人人视频
+### 人人视频
 
 ```
 [Script]
@@ -11,7 +11,7 @@ http-response ^https:\/\/api\.rr\.tv[\s\S]*(channel|Feed|Choice|profile|Medal) s
 hostname = api.rr.tv
 ```
 
-# 抖音
+## 抖音
 
 ```
 [Script]
