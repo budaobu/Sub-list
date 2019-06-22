@@ -28,15 +28,7 @@ hostname = aweme*.snssdk.com
 
 ```
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/ad.list,REJECT
-
-# Zhihu(配合 Script 食用)
-DOMAIN,mqtt.zhihu.com
-DOMAIN-SUFFIX,xdrig.com
-URL-REGEX,https://api.zhihu.com/(fringe|zst|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|.*launch|.*featured-comment-ad|.*recommendations|search/(top|tabs|preset))
-USER-AGENT,AVOS*
-AND,((USER-AGENT,ZhihuHybrid*), (NOT,((DOMAIN,www.zhihu.com))), (NOT,((DOMAIN,static.zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
-AND,((USER-AGENT,osee2*), (NOT,((DOMAIN,api.zhihu.com))), (NOT,((DOMAIN,lens.zhihu.com))), (NOT,((DOMAIN,static.zhihu.com))), (NOT,((DOMAIN,www.zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
+RULE-SET,https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/reject.list,REJECT
 
 [Script]
 http-response https://api.zhihu.com/moments\? script-path=ExternalResources/Scripts/ZhihuFeed.js,requires-body=true
