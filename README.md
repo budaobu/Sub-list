@@ -2,9 +2,9 @@
 
 **Warnning!**
 
-These files are collected for personal use only.
+*These files are collected for personal use only.*
 
-> If something goes wrong, it will have nothing to do with me.
+*If something goes wrong, it will have nothing to do with me.*
 
 ## Surge
 
