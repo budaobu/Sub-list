@@ -67,3 +67,28 @@ http-response https://app.bilibili.com/x/v2/rank requires-body=true,script-path=
 [MITM]
 hostname = app.bilibili.com, api.bilibili.com
 ```
+
+### 网易漫画
+
+```
+[Script]
+http-response https?://api-163.biliapi.net/getUserProfile script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/wymh.js,requires-body=true
+```
+
+### 西瓜视频
+
+[西瓜视频](https://www.xg1.app)
+
+```
+[Script]
+http-response https?://api.gkaorlz.com/api/user/get script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/watermelonvideo.js,requires-body=true
+```
+
+### 爱美剧
+
+[爱美剧](http://app.meiju2018.com)
+
+```
+[Script]
+http-response https?://mjappaz.yefu365.com/index.php/app/ios/ script-path= https://meetagit.github.io/MeetaRules/Surge/Scripting/aimeiju.js,requires-body=true
+```
