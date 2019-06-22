@@ -1,10 +1,18 @@
 # Config
 
-subscription
+**Warnning!**
+
+These files are collected for personal use only.
+
+> If something goes wrong, it will have nothing to do with me.
 
 ## Surge
 
-### 人人视频
+### Choler
+
+from:[Choler/Surge](https://github.com/Choler/Surge)
+
+#### 人人视频
 
 ```
 [Script]
@@ -24,7 +32,11 @@ http-response ^https:\/\/[\s\S]*\/v1\/(aweme\/)?(feed|post)\/\? script-path=http
 hostname = aweme*.snssdk.com
 ```
 
-### 知乎
+### onewayticket255
+
+from:[onewayticket255/Surge-Script](https://github.com/onewayticket255/Surge-Script)
+
+#### 知乎
 
 ```
 [Rule]
@@ -40,7 +52,7 @@ http-response https://api.zhihu.com/market/header script-path=ExternalResources/
 hostname = api.zhihu.com
 ```
 
-### bilibili
+#### bilibili
 
 ```
 [RULE]
@@ -68,14 +80,18 @@ http-response https://app.bilibili.com/x/v2/rank requires-body=true,script-path=
 hostname = app.bilibili.com, api.bilibili.com
 ```
 
-### 网易漫画
+### MeetaGit
+
+from:[MeetaGit/MeetaRules](https://github.com/MeetaGit/MeetaRules)
+
+#### 网易漫画
 
 ```
 [Script]
 http-response https?://api-163.biliapi.net/getUserProfile script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/wymh.js,requires-body=true
 ```
 
-### 西瓜视频
+#### 西瓜视频
 
 [西瓜视频](https://www.xg1.app)
 
@@ -84,11 +100,25 @@ http-response https?://api-163.biliapi.net/getUserProfile script-path=https://me
 http-response https?://api.gkaorlz.com/api/user/get script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/watermelonvideo.js,requires-body=true
 ```
 
-### 爱美剧
+#### 爱美剧
 
 [爱美剧](http://app.meiju2018.com)
 
 ```
 [Script]
 http-response https?://mjappaz.yefu365.com/index.php/app/ios/ script-path= https://meetagit.github.io/MeetaRules/Surge/Scripting/aimeiju.js,requires-body=true
+```
+
+#### 微信读书
+
+```
+[Script]
+http-response https?://i.weread.qq.com/pay/memberCardSummary?pf script-path= https://meetagit.github.io/MeetaRules/Surge/Scripting/wechatread.js
+```
+
+#### 石头阅读
+
+```
+[Script]
+http-response https?://app.stoneread.com/api/apiClient/index?data script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/StoneRead.js
 ```
