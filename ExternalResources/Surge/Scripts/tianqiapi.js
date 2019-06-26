@@ -25,6 +25,6 @@ $httpClient.get(weaapi, function(error, response, data){
 [Script]
 
 # 在每天 7:30 和 14:30 预报天气
-cron "30 7,14 * * *" script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/weather.js
+cron "30 7,14 * * *" script-path=https://raw.githubusercontent.com/budaobu/Sub-list/master/ExternalResources/Surge/Scripts/tianqiapi.js
 
 *****************************************************************/
