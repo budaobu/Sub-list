@@ -1,4 +1,4 @@
-const hfapi = "https://free-api.heweather.net/s6/weather/now?&location=auto_ip&key=5594d6910d9947e7a243c9f533a927f4"
+const hfapi = "https://free-api.heweather.net/s6/weather/now?&location=auto_ip&key=c717ed3afe5d42afa19c9734534d8780"
 function getwmatioin(data){
     var obj = JSON.parse(data);
     console.log(obj);
@@ -21,7 +21,7 @@ $httpClient.get(hfapi, function(error, response, data){
         $done();                   
     } else {
         var mm = getwmatioin(data);
-        var title = "Meeta与您相伴"+"`"+mm[0];
+        var title = "和风天气"+"`"+mm[0];
         var subtitle = "天气状况："+mm[1]+"  "+mm[3];
         var mation = "体感温度："+mm[2]+"℃"+"  "+"空气湿度："+mm[4]+"%"+"  "+"能见度："+mm[5]+"㎞"+"\n更新时间："+mm[6];
         $notification.post(title, subtitle, mation);
@@ -31,7 +31,7 @@ $httpClient.get(hfapi, function(error, response, data){
 );
 
 /* 修改自：https://meetagit.github.io/MeetaRules/Surge/Scripting/hourlyWeather.js
-文本编辑模式下复制粘贴
+每天 7:30 和 14:30 推送天气预报通知
 cron "30 7,14 * * *" script-path=https://meetagit.github.io/MeetaRules/Surge/Scripting/meweather.js
 新采用了和风天气api,天气通知比前一个内容更丰富等等（由于免费接口限制每日访问量，请大家不要设置高频天气通知）
 向通知中心发送通知，Surge iOS 上需开启通知总开关；
