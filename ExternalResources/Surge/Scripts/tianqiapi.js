@@ -1,4 +1,4 @@
-const weaapi = "https://www.tianqiapi.com/api/?version=v6"
+const weaapi = "https://www.tianqiapi.com/api/?version=v6&appid=13611111&appsecret=64KFE8jg"
 
 $httpClient.get(weaapi, function(error, response, data){
     if (error){
@@ -20,11 +20,11 @@ $httpClient.get(weaapi, function(error, response, data){
 
 /*****************************************************************
 
-修改自：https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/weather.js
+修改自：https://meetagit.github.io/MeetaRules/Surge/Scripting/hourlyWeather.js
 
 [Script]
 
-# 在每天 7:30 和 14:30 预报天气
-cron "30 7,14 * * *" script-path=https://raw.githubusercontent.com/budaobu/Sub-list/master/ExternalResources/Surge/Scripts/tianqiapi.js
+# 在每天 8:00-20:00 整点预报天气
+cron "0 8-20 * * *" script-path=https://raw.githubusercontent.com/ydzydzydz/Rules/master/js/weather.js
 
 *****************************************************************/
