@@ -59,4 +59,4 @@ function aqi(icon, daily_mintemp, daily_maxtemp, daily_prec_chance, hour_summary
 
 }
 
-weather()
+weather();
