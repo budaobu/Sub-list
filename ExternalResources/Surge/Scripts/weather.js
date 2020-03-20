@@ -1,5 +1,5 @@
 const lang = "zh"
-var lat_lon = "28.227886, 112.946275"
+var lat_lon = "28.205958, 112.955954"
 var api = "de80ffc5b6745243eb9c86eb2362ca2a"
 //第三行引号内填入申请到的dark sky api
 //有问题请通过Telegram反馈 https://t.me/Leped_Bot
