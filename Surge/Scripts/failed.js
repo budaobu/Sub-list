@@ -3,7 +3,7 @@
 SCRIPT,falied,PROXY,requires-resolve
 
 [Script]
-rule falied script-path=https://Choler.github.io/Surge/Script/failed.js
+rule falied script-path=https://raw.githubusercontent.com/budaobu/Rules/master/Surge/Scripts/failed.js
 */
 
 var ip_1 = $request.dnsResult.v4Addresses[0] === "0.0.0.0";
