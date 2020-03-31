@@ -1,1 +1,1 @@
-rm -rf/*
+The project has been removed.
