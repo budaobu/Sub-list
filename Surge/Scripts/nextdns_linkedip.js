@@ -6,6 +6,7 @@ always-real-ip = link-ip.nextdns.io
 [Host]
 # NextDNS (https://nextdns.io/)
 link-ip.nextdns.io = server:45.90.xx.xx
+[Script]
 # > NextDNS
 event network-changed script-path=Scripts/nextdns_linkedip.js
 */
