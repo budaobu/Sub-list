@@ -1,4 +1,4 @@
-# Global.list
+# proxy.list
 # (DNS Cache Pollution Protection)
 # > Google
 DOMAIN-SUFFIX,ampproject.org
