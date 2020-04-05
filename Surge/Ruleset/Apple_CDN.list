@@ -1,22 +1,17 @@
 # Apple_CDN.list
-#
-# Apple Global CDN
-#
-# iOS App Store
+# Apple Music
+DOMAIN,aod.itunes.apple.com
+DOMAIN,api.smoot.apple.cn
+DOMAIN,mvod.itunes.apple.com
+# > App Store
+USER-AGENT,com.apple.appstored*
+PROCESS-NAME,storedownloadd
+DOMAIN-SUFFIX,mzstatic.com
 DOMAIN,iosapps.itunes.apple.com
-# Mac App Store
 DOMAIN,osxapps.itunes.apple.com
-# Update
+# > Update
 DOMAIN,supportdownload.apple.com
-# Update
 DOMAIN,appldnld.apple.com
-# Update
 DOMAIN,swcdn.apple.com
 DOMAIN,apptrailers.itunes.apple.com
 DOMAIN,updates-http.cdn-apple.com
-# App Store & iTunes Images
-DOMAIN-SUFFIX,mzstatic.com
-# Mac App Store
-PROCESS-NAME,storedownloadd
-# iOS App Store
-USER-AGENT,com.apple.appstored*
