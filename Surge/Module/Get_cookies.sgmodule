@@ -2,6 +2,7 @@
 #!desc=签到脚本 Cookie 获取，可在使用后将其禁用，以免产生不必要的 MITM.
 #!system=ios
 
+[Script]
 # > 网易云音乐签到
 # music.163.com
 # 浏览器访问并登录: https://music.163.com/m/login

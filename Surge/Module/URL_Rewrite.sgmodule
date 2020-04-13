@@ -2,6 +2,7 @@
 #!desc=302 Redirect & Advertising Block
 #!system=ios
 
+[URL Rewrite]
 # > Google_Service_HTTPS_Jump
 ^https?://(www.)?g.cn https://www.google.com 302
 ^https?://(www.)?google.cn https://www.google.com 302

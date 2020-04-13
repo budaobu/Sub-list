@@ -2,6 +2,7 @@
 #!desc=其他脚本，包括电商比价、NF评分、解锁等.
 #!system=ios
 
+[Script]
 # > NextDNS
 // nextdns_linkedip.js = script-path=Scripts/nextdns_linkedip.js,event-name=network-changed,type=event
 # > Speed up download app ios
