@@ -10,8 +10,4 @@ tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/yich
 tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,type=http-response
 
 [MITM]
-<<<<<<< HEAD
 hostname = %INSERT% trade-acs.m.taobao.com
-=======
-hostname = %APPEND% trade-acs.m.taobao.com
->>>>>>> 998568591a24478da1cdb731c754f7465e54a95c
