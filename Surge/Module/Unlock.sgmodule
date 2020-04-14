@@ -1,0 +1,20 @@
+#!name=Unlock
+#!desc=显示NF评分、人人视频画质解锁、VSCO滤镜解锁等。
+#!system=ios
+
+[Script]
+# > 91ShortVideo
+# 91ShortVideo.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/91ShortVideo.js,pattern=^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$,type=http-request
+# > VUE
+VUE.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/VUE.js,pattern=https:\/\/api\.vuevideo\.net\/api\/v1\/(users\/.+\/profile|subtitle\/prepare),type=http-response
+# > VSCO
+vsco.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,type=http-response
+# > Display Netflix TV series and movie's IMDb ratings, Douban ratings, rotten tomato and country/region
+# ios.prod.ftl.netflix.com
+nf_rating.js = script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,type=http-request
+nf_rating.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,type=http-response
+# > 人人视频 解锁AI原画
+rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail),type=http-response
+
+[MITM]
+hostname = %APPEND% ios.prod.ftl.netflix.com, *.rr.tv, vsco.co
