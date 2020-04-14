@@ -17,4 +17,4 @@ nf_rating.js = requires-body=1,script-path=https://raw.githubusercontent.com/yic
 rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail),type=http-response
 
 [MITM]
-hostname = %APPEND% ios.prod.ftl.netflix.com, *.rr.tv, vsco.co
+hostname = %INSERT% ios.prod.ftl.netflix.com, *.rr.tv, vsco.co
