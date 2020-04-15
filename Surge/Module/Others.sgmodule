@@ -3,15 +3,9 @@
 #!system=ios
 
 [Script]
-# > NextDNS
-// nextdns_linkedip.js = script-path=Scripts/nextdns_linkedip.js,event-name=network-changed,type=event
-# > Speed up download app ios
-dnspod = script-path=https://raw.githubusercontent.com/budaobu/Rules/master/Surge/Scripts/dnspod.js,script-update-interval=-1,type=dns
 # > WeChat
 WeChat.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/WeChat.js,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,type=http-request
 # > Youtube
 // YouTube.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/YouTube.js,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier),type=http-request
 # > Aweme
 Aweme.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js,pattern=^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/,type=http-response
-# > Faild
-falied = script-path=https://raw.githubusercontent.com/budaobu/Rules/master/Surge/Scripts/failed.js,type=rule
