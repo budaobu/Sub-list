@@ -38,6 +38,3 @@
 # > bilibili 解锁大会员
 ^https?:\/\/api.bilibili.com\/pgc\/view\/app\/season http://api.bili.best/season 302
 ^https?:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl http://api.bili.best/playurl 302
-# > TikTok (By Choler)
-# (.*video_id=\w{32})(.*watermark=)(.*) $1 302
-# (?<=(carrier|account|sys|sim)_region=)CN JP 307
