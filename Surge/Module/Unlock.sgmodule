@@ -15,6 +15,8 @@ nf_rating.js = script-path=https://raw.githubusercontent.com/yichahucha/surge/ma
 nf_rating.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,type=http-response
 # > 人人视频 解锁AI原画
 rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail),type=http-response
+# > bear unlock pro
+bear = requires-body=1,max-size=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,script-path=Scripts/bear.js
 
 [MITM]
-hostname = %INSERT% ios.prod.ftl.netflix.com, *.rr.tv, vsco.co
+hostname = %INSERT% ios.prod.ftl.netflix.com, *.rr.tv, vsco.co, buy.itunes.apple.com
