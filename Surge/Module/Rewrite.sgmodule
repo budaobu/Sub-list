@@ -1,0 +1,59 @@
+#!name=Rewrite
+#!desc=重写请求的 URL，或者通过 URL 拒绝某些请求。
+
+// --- URL Rewrite and Header Rewrite ---
+[MITM]
+hostname = %APPEND% *.amemv.com, *.iydsj.com, *.k.sohu.com, *.tv.sohu.com, *.kakamobi.cn, *.kingsoft-office-service.com, *.meituan.net, *.ofo.com, *.pstatp.com, *.snssdk.com, *.ydstatic.com, *pi.feng.com, 4gimg.map.qq.com, a.apicloud.com, a.qiumibao.com, a.wkanx.com, trade.acs.m.taobao.com, act.vip.iqiyi.com, api.21jingji.com, api.bjxkhc.com, api.caijingmobile.com, api.chelaile.net.cn, api.daydaycook.com.cn, api.douban.com, api.gotokeep.com, api.haohaozhu.cn, api.huomao.com, api.intsig.net, api.izuiyou.com, api.jr.mi.com, api.jxedt.com, api.kkmh.com, api.m.jd.com, api.mgzf.com, api.qbb6.com, api.psy-1.com, api.resso.app, api.rr.tv, api.smzdm.com, api.vistopia.com.cn, api.waitwaitpay.com, api.wallstreetcn.com, api.xiachufang.com, api.yangkeduo.com, api.zhihu.com, api.zhuishushenqi.com, api*.futunn.com, api-mifit*.huami.com, api-release.wuta-cam.com, app.58.com, app.api.ke.com, app.bilibili.com, appconf.mail.163.com, app.mixcapp.com, app.variflight.com, app.wy.guahao.com, app.yinxiang.com, app-api.smzdm.com, b.zhuishushenqi.com, business-cdn.shouji.sogou.com, c.m.163.com, cap.caocaokeji.cn, capi.mwee.cn, cdn.moji.com, channel.beitaichufang.com, cloud.189.cn, clientaccess.10086.cn, client.mail.163.com, cms.daydaycook.com.cn, consumer.fcbox.com, daoyu.sdo.com, dl.app.gtja.com, dsa-mfp.fengshows.cn, dxy.com, e.dangdang.com, easyreadfs.nosdn.127.net, enjoy.abchina.com, gateway.shouqiev.com, guide-acs.m.taobao.com, g.cdn.pengpengla.com, gw.alicdn.com, gw.csdn.net, gw-passenger.01zhuanche.com, heic.alicdn.com, huichuan.sm.cn, i.weread.qq.com,i.ys7.com, iapi.bishijie.com, iface.iqiyi.com, ih2.ireader.com, imeclient.openspeech.cn, img*.10101111cdn.com, img*.360buyimg.com, img.jiemian.com, interface.music.163.com, ios.lantouzi.com, ios.wps.cn, m*.amap.com, m.client.10010.com, m.ibuscloud.com, m.tuniu.com, m.yap.yahoo.com, manga.bilibili.com, mapi.mafengwo.cn, media.qyer.com, mlife.jf365.boc.cn, mob.mddcloud.com.cn, mobi.360doc.com, mp.weixin.qq.com, mrobot.pcauto.com.cn, mrobot.pconline.com.cn, ms.jr.jd.com, msspjh.emarbox.com, news.ssp.qq.com, newsso.map.qq.com, nnapp.cloudbae.cn, open.qyer.com, p.du.163.com, pic1cdn.cmbchina.com, pic*.chelaile.net, portal-xunyou.qingcdn.com, pss.txffp.com, r.inews.qq.com, render.alipay.com, restapi.iyunmai.com, resrelease.wuta-cam.com, richmanapi.jxedt.com, rtbapi.douyucdn.cn, s*.zdmimg.com, service.4gtv.tv, smkmp.96225.com, slapi.oray.net, snailsleep.net, sp.kaola.com, ss0.bdstatic.com, ssl.kohsocialapp.qq.com, static.vuevideo.net, static1.keepcdn.com, status.boohee.com, support.you.163.com, thor.weidian.com, tiku.zhan.com, weibointl.api.weibo.cn, www.bodivis.com.cn, www.dandanzan.com, www.flyertea.com, yxyapi*.drcuiyutao.com, www.zhihu.com, www.zybang.com, zhidao.baidu.com, 123.59.31.1, 119.18.193.135
+
+[URL Rewrite]
+# > Google_Service_HTTPS_Jump
+^https?://(www.)?g.cn https://www.google.com 302
+^https?://(www.)?google.cn https://www.google.com 302
+# Redirect HTTP to HTTPS
+^https?:\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
+^https?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
+^https?:\/\/(www.)?mi\.com\/ https://www.mi.com/ 302
+^https?:\/\/you\.163\.com\/ https://you.163.com/ 302
+^https?:\/\/(www.)?suning\.com/ https://suning.com/ 302
+^https?:\/\/(www.)?yhd\.com https://yhd.com/ 302
+# > Anti_ISP_JD_Hijack
+^https?://coupon.m.jd.com/ https://coupon.m.jd.com/ 302
+^https?://h5.m.jd.com/ https://h5.m.jd.com/ 302
+^https?://item.m.jd.com/ https://item.m.jd.com/ 302
+^https?://m.jd.com/ https://m.jd.com/ 302
+^https?://newcz.m.jd.com/ https://newcz.m.jd.com/ 302
+^https?://p.m.jd.com/ https://p.m.jd.com/ 302
+^https?://so.m.jd.com/ https://so.m.jd.com/ 302
+^https?://union.click.jd.com/jda? http://union.click.jd.com/jda?adblock= header
+^https?://union.click.jd.com/sem.php? http://union.click.jd.com/sem.php?adblock= header
+^https?://www.jd.com/ https://www.jd.com/ 302
+# > Anti_ISP_Taobao_Hijack
+^https?://m.taobao.com/ https://m.taobao.com/ 302
+# > Wiki
+^https?://.+.(m.)?wikipedia.org/wiki http://www.wikiwand.com/en 302
+^https?://zh.(m.)?wikipedia.org/(zh-hans|zh-sg|zh-cn|zh(?=/)) http://www.wikiwand.com/zh 302
+^https?://zh.(m.)?wikipedia.org/zh-[a-zA-Z]{2,} http://www.wikiwand.com/zh-hant 302
+# > NOMO
+^https://nomo.dafork.com/api/v3/iap/ios_product_list https://files.catbox.moe/fgmkpy.json 302
+# > Other
+^https?://cfg.m.ttkvod.com/mobile/ttk_mobile_1.8.txt http://ogtre5vp0.bkt.clouddn.com/Static/TXT/ttk_mobile_1.8.txt header
+^https?://cnzz.com/ http://ogtre5vp0.bkt.clouddn.com/background.png? header
+^https?://m.qu.la/stylewap/js/wap.js http://ogtre5vp0.bkt.clouddn.com/qu_la_wap.js 302
+^https?://m.yhd.com/1/\? http://m.yhd.com/1/?adbock= 302
+^https?://n.mark.letv.com/m3u8api/ http://burpsuite.applinzi.com/Interface header
+^https?://sqimg.qq.com/ http://sqimg.qq.com/ 302
+^https?://static.m.ttkvod.com/static_cahce/index/index.txt http://ogtre5vp0.bkt.clouddn.com/Static/TXT/index.txt header
+^https?://www.iqshw.com/d/js/m http://burpsuite.applinzi.com/Interface header
+^https?://www.iqshw.com/d/js/m http://rewrite.websocket.site:10/Other/Static/JS/Package.js? header
+# > bilibili 解锁大会员
+^https?:\/\/api.bilibili.com\/pgc\/view\/app\/season http://api.bili.best/season 302
+^https?:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl http://api.bili.best/playurl 302
+
+[Header Rewrite]
+# 百度贴吧
+^https?+:\/\/(?:c\.)?+tieba\.baidu\.com\/(?>f|p) header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+^https?+:\/\/jump2\.bdimg\.com\/(?>f|p) header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+# 百度知道
+^https?+:\/\/zhidao\.baidu\.com header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+# 知乎
+^https?+:\/\/www\.zhihu\.com\/question header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
