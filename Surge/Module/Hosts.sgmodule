@@ -4,6 +4,7 @@
 [Host]
 # > NextDNS (https://nextdns.io/)
 link-ip.nextdns.io = server:45.90.28.87
+# testflight.apple.com = script:dnspod
 # iosapps.itunes.apple.com = script:dnspod
 ip6-localhost = ::1
 ip6-loopback = ::1
