@@ -1,0 +1,7 @@
+#!name = 开启Google DOH
+#!desc = 使用Google DNS-over-HTTPS (DoH)
+
+[General]
+doh-format = wireformat
+doh-server = https://dns.google/dns-query
+dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
