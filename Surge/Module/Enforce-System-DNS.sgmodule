@@ -1,0 +1,8 @@
+#!name = Enforce System DNS
+#!desc = Enforce Surge to use syslib (or OS) to handle all lookup.
+
+[General]
+dns-server = system
+
+[Host]
+* = server:system
