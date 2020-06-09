@@ -7,4 +7,4 @@ doh-server = https://cloudflare-dns.com/dns-query
 dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
 
 [Rule]
-# PROTOCOL,DOH,Proxy
+PROTOCOL,DOH,Proxy
