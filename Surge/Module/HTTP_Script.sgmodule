@@ -129,3 +129,6 @@ rrTV = type=http-response,pattern=^https?:\/\/api\.rr\.tv(\/user\/profile|\/ad\/
 
 # > pear Unlock vip
 Pear = type=http-response,pattern=^https:\/\/m\.pearkin\.com\/(api\/Movie\/WatchMovie|api\/Account\/CheckVip|api\/account\/IndexDetail),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/pear.js,script-update-interval=0
+
+# > bear unlock pro
+Bear = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=Scripts/bear.js
