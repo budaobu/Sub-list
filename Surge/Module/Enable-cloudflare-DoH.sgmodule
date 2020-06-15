@@ -1,4 +1,4 @@
-#!name = Cloudflare DoH
+#!name = DoH Cloudflare
 #!desc = 使用Cloudfalre DNS-over-HTTPS (DoH)
 
 [General]
