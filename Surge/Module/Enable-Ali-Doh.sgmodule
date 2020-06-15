@@ -1,4 +1,4 @@
-#!name = 开启阿里DOH
+#!name = DOH Aliyun
 #!desc = 使用阿里DNS-over-HTTPS (DoH)
 
 [General]
