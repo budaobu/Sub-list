@@ -1,4 +1,4 @@
-#!name = Google DoH
+#!name = DoH Google
 #!desc = 使用Google DNS-over-HTTPS (DoH)
 
 [General]
