@@ -1,4 +1,4 @@
-#!name = NextDNS DoH
+#!name = DoH NextDNS
 #!desc = 使用NextDNS DNS-over-HTTPS (DoH)
 
 [General]
