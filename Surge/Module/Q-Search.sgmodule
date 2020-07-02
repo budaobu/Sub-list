@@ -1,5 +1,5 @@
 #!name=Q-Search (Modified)
-#!desc=Browser Search Add-ons, Modified from module by Neurogram
+#!desc=Safari Search Add-ons by Neurogram
 #!system=ios
 
 # Q-Search 
@@ -55,7 +55,6 @@
 # 无指令则转 Google 搜索
 
 [URL Rewrite]
-
 #gm   (Google图片)
 ^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
 # gh   (GitHub)
@@ -172,7 +171,6 @@
 
 # 无指令: 谷歌
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
-
 
 [MITM]
 hostname = %APPEND% duckduckgo.com
