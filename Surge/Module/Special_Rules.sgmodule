@@ -21,9 +21,9 @@ USER-AGENT,coffeecorp*,DIRECT
 USER-AGENT,restaurant-mobile*,DIRECT
 DOMAIN,app.adjust.com,DIRECT
 # > Google
-DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
-DOMAIN,dl.google.com,DIRECT
-DOMAIN,mtalk.google.com,DIRECT
+# DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+# DOMAIN,dl.google.com,DIRECT
+# DOMAIN,mtalk.google.com,DIRECT
 # > Tencent
 DOMAIN,livew.l.qq.com,DIRECT
 DOMAIN,vd.l.qq.com,DIRECT
@@ -57,3 +57,7 @@ DOMAIN-SUFFIX,xunlei.com,DIRECT
 URL-REGEX,(.+\.|^)(360|so)\.(cn|com),DIRECT
 # > 百度
 URL-REGEX,(api|ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map|)\.(baidu|n\.shifen)\.com,DIRECT
+# > Windows
+DOMAIN-SUFFIX,windows.com,DIRECT
+DOMAIN-SUFFIX,windows.net,DIRECT
+DOMAIN-SUFFIX,windowsupdate.com,DIRECT
