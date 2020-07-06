@@ -1,5 +1,5 @@
 #!name=Historical price
-#!desc=Display commodity historical price.
+#!desc=显示京东、淘宝商品历史价格。
 #!system=ios
 
 [Script]
