@@ -2,7 +2,7 @@
 #!desc = 使用NextDNS DNS-over-HTTPS (DoH)
 
 [General]
-always-real-ip = link-ip.nextdns.io
+always-real-ip = %APPEND% link-ip.nextdns.io
 doh-format = wireformat
 doh-server = https://dns.nextdns.io/7789d5
 dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
