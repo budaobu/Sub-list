@@ -1,0 +1,20 @@
+#!name=RRTV Checkin
+#!desc=人人视频、人人影视（字幕组） cookie获取，自动签到。
+#!system=ios
+
+[Script]
+# > 人人视频
+# 打开 APP, 访问下个人中心
+rrtv = type=http-request,pattern=^https:\/\/api\.rr\.tv\/user\/profile,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js
+# > 人人视频签到
+rrtv.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,cronexp=25 0 * * *,type=cron
+
+# > 字幕组(人人影视)
+# 浏览器登录: http://www.rrys2019.com
+zimuzu = type=http-request,pattern=^https?:\/\/(www\.)?rrys2019\.com\/?.?,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.cookie.js
+zimuzu = type=http-request,pattern=^http:\/\/ios.zmzapi.com\/index.php.*a=(mobile_)?login,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.cookie.js
+# > 字幕组签到
+zimuzu.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.js,cronexp=30 0 * * *,type=cron
+
+[MITM]
+hostname = %INSERT% act.10010.com, m.client.10010.com
