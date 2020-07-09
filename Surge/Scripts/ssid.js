@@ -2,7 +2,7 @@
 wifi_proxy change (Made by Meeta)
 
 [Script]
-event network-changed debug=1,script-path=wifi_proxy.js
+SSID助手 = debug=1,script-path=Scripts/ssid.js,type=event,event-name=network-changed,control-api=true
 
 PS:记得自己修改WIFI名称
 主要功能:指定Wi-Fi(路由器翻)下,Surge使用直连模式,其他网络下Surge使用规则模式
@@ -12,7 +12,7 @@ Rewrite和Scripting依然有效
 */
 
 var wifiname = $network.wifi.ssid;
-var proxywifi = ["wifi_1","wifi_2"];
+var proxywifi = ["cellular"];
 for (var i = 0; i < proxywifi.length; i++) {
 	if (wifiname==proxywifi[i]){
 		$surge.setOutboundMode("direct");
