@@ -1,5 +1,5 @@
 const SSID = $network.wifi.ssid;
-const proxywifi = !$persistentStore.read("lkWifiSsids")?["jf-china","Jf-china"]:JSON.parse($persistentStore.read("lkWifiSsids"));
+const proxywifi = !$persistentStore.read("lkWifiSsids")?["cellular","cellular"]:JSON.parse($persistentStore.read("lkWifiSsids"));
 let res = proxywifi.some(val => val === (!!SSID ? SSID : "cellular"));
 let lkWifiLast = !$persistentStore.read("lkWifiLast")?"abcdefghijklmnopqrstuvwxyz":$persistentStore.read("lkWifiLast");
 if (lkWifiLast!=(!!SSID ? SSID : "cellular")){
