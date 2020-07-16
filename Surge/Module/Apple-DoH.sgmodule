@@ -1,0 +1,10 @@
+#!name = DoH Apple
+#!desc = Apple DNS-over-HTTPS (DoH)
+
+[General]
+doh-format = wireformat
+doh-server = https://doh.dns.apple.com/dns-query
+# dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
+
+[Rule]
+# PROTOCOL,DOH,Proxy
