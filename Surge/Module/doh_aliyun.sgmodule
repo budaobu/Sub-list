@@ -1,4 +1,4 @@
-#!name = DOH Aliyun
+#!name = DoH Aliyun
 #!desc = 使用阿里DNS-over-HTTPS (DoH)
 
 [General]
