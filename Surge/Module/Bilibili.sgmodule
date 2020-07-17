@@ -1,5 +1,5 @@
-#!name=Bilibili remove ads
-#!desc=Bilibili app 去广告。
+#!name=Block Bilibili ads
+#!desc=Bilibili remove ads.
 #!system=ios
 
 [Rule]
