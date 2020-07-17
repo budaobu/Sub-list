@@ -1,4 +1,4 @@
-#!name=Bilibili Manga DailyBonus
+#!name=DailyBonus Bilibili Manga
 #!desc=When Bilibili Manga app is opened, click "My", If notification gets cookie success, you can use the check in script. because script will automatically judgment whether the cookie is updated, so you dont need to disable it manually.
 #!system=ios
 
