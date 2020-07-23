@@ -1,6 +1,0 @@
-#!name=SSID By Meeta
-#!desc=By Meeta.
-#!system=ios
-
-[Script]
-SSID助手 = debug=1,script-path=https://raw.githubusercontent.com/budaobu/Rules/master/Surge/Scripts/ssid.js,type=event,event-name=network-changed,control-api=true
