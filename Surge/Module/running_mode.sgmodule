@@ -1,0 +1,6 @@
+#!name=SSID Running Mode
+#!desc=根据当前网络自动切换模式 by Peng-YM
+#!system=ios
+
+[Script]
+SSID = type=event,event-name=network-changed,debug=1,script-path=https://raw.githubusercontent.com/budaobu/Rules/master/Surge/Scripts/running-mode.js,control-api=true
