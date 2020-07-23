@@ -1,3 +1,7 @@
+
+/**
+ * By lowking. (https://github.com/lowking/Scripts)
+ */
 const SSID = $network.wifi.ssid;
 const proxywifi = !$persistentStore.read("lkWifiSsids")?["cellular","cellular"]:JSON.parse($persistentStore.read("lkWifiSsids"));
 let res = proxywifi.some(val => val === (!!SSID ? SSID : "cellular"));
