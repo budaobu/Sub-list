@@ -1,6 +1,0 @@
-#!name=SSID By lowking
-#!desc=By lowking. (https://github.com/lowking/Scripts)
-#!system=ios
-
-[Script]
-SSID助手 = debug=1,script-path=https://raw.githubusercontent.com/budaobu/Rules/master/Surge/Scripts/Ssid2.js,type=event,event-name=network-changed,control-api=true
