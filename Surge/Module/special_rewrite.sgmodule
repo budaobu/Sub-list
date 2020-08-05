@@ -48,6 +48,38 @@ hostname = %APPEND% *.amemv.com, *.iydsj.com, *.k.sohu.com, *.tv.sohu.com, *.kak
 # > bilibili 解锁大会员
 # ^https?:\/\/api.bilibili.com\/pgc\/view\/app\/season http://api.bili.best/season 302
 # ^https?:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl http://api.bili.best/playurl 302
+# > Xueqiu - api.xueqiu.com,promo.xueqiu.com,182.92.251.113
+^(http|https):\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/promotion\/(display_cache|display_ad|feed_display|search_ad) - reject
+^(http|https):\/\/(api|promo)\.xueqiu\.com\/promotion\/(display_cache|display_ad|feed_display|search_ad) - reject
+# ---(Tencent)---
+# > FUTU - api*.futunn.com
+^(http|https):\/\/api\.futunn\.com\/v\d\/ad\/ - reject
+^(http|https):\/\/api\d\.futunn\.com\/ad\/ - reject
+# > Tencent Game - ssl.kohsocialapp.qq.com
+^(http|https):\/\/ssl\.kohsocialapp\.qq\.com:\d+\/game\/buttons - reject
+^(http|https):\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info - reject
+# > Tencent Map - 4gimg.map.qq.com
+^(http|https):\/\/4gimg\.map\.qq\.com\/mwaSplash\/ - reject
+# > Tencent Video
+^(http|https):\/\/vv\.video\.qq\.com\/getvmind\? - reject
+^(http|https):\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+p20\d\.1\.mp4\? - reject
+^(http|https):\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+=v3004 - reject
+^(http|https):\/\/video\.dispatch\.tc\.qq\.com\/\w+\.p20\d\.1\.mp4 - reject
+^(http|https):\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/[a-z.]+\.tc\.qq\.com\/[\w\W]+_p20\d_ - reject
+# > Tencent News - r.inews.qq.com
+^(http|https):\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) - reject
+# > Tencent Sports - news.ssp.qq.com
+^(http|https):\/\/news\.ssp\.qq\.com\/app - reject
+# > Tencent Music
+^(http|https):\/\/y\.gtimg\.cn\/music\/common\/upload\/t_splash_info\/ - reject
+^(http|https):\/\/((25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\.){3}(25[0-5]|2[0-4]\d|1\d{2}|[1-9]?\d)\/music\/common\/upload\/t_splash_info\/ - reject
+# > Tencent WeChat - mp.weixin.qq.com
+# ^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement) - reject
+# ---
+# > TuNiu - m.tuniu.com
+^(http|https):\/\/m\.tuniu\.com\/api\/operation\/splash\/ - reject
+# > TVBCLive - mob.mddcloud.com
+^(http|https):\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ - reject
 
 [Header Rewrite]
 # 百度贴吧
@@ -57,3 +89,6 @@ hostname = %APPEND% *.amemv.com, *.iydsj.com, *.k.sohu.com, *.tv.sohu.com, *.kak
 # ^https?+:\/\/zhidao\.baidu\.com header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
 # 知乎
 # ^https?+:\/\/www\.zhihu\.com\/question header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+
+[MITM]
+hostname = %APPEND% api.xueqiu.com,promo.xueqiu.com,182.92.251.113,api*.futunn.com,ssl.kohsocialapp.qq.com,4gimg.map.qq.com,r.inews.qq.com,news.ssp.qq.com,mp.weixin.qq.com,m.tuniu.com,mob.mddcloud.com
