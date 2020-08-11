@@ -1,10 +1,9 @@
-#!name=DailyBonus Bilibili Manga
-#!desc=When Bilibili Manga app is opened, click "My", If notification gets cookie success, you can use the check in script. because script will automatically judgment whether the cookie is updated, so you dont need to disable it manually.
-#!system=ios
+#!name=BiliBili漫画
+#!desc=BiliBili漫画签到
 
 [Script]
-Manga = type=http-request,https:\/\/manga\.bilibili\.com\/.*\.User\/GetWallet,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
-Manga = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js,cronexp=0 9 * * *,type=cron
+BiliBili漫画_每日签到 = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js,type=cron,cronexp=05 00 * * *
+BiliBili漫画_获取cookie = max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js,type=http-request,pattern=https:\/\/manga\.bilibili\.com\/.*\.User\/GetWallet
 
 [MITM]
 hostname = %APPEND% manga.bilibili.com
