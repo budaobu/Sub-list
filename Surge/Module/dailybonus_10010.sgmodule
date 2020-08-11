@@ -1,18 +1,11 @@
-#!name=DailyBonus 10010
-#!desc=联通助手App cookie获取，自动签到、每日话费通知。
+#!name=中国联通
+#!desc=中国联通每日签到与抽奖
 #!system=ios
 
 [Script]
-# > 联通助手
-# 打开 APP , 进入签到页面, 系统提示: `获取刷新链接: 成功`,然后手动签到 1 次
-# 首页>天天抽奖, 系统提示 `2` 次: `获取Cookie: 成功 (登录抽奖)` 和 `获取Cookie: 成功 (抽奖次数)`
-10010 = type=http-request,pattern=^https:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
-10010 = type=http-request,pattern=^https:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign.do,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
-10010 = type=http-request,pattern=^https:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
-# > 中国联通助手签到
-10010.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js,cronexp=15 0 0 * * *,type=cron
-# > 联通话费
-10010+.js = debug=1,script-path=Scripts/10010+.js,cronexp=00 12 * * *,type=cron
+联通_签到与抽奖 = type=cron,cronexp=20 0 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.js,script-update-interval=0
+联通_获取cookie = type=http-request,pattern=^https?:\/\/m\.client\.10010\.com\/dailylottery\/static\/(integral|doubleball)\/firstpage,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.js,script-update-interval=0
+联通话费 = type=cron,cronexp=00 12 * * *,debug=1,script-path=Scripts/10010+.js
 
 [MITM]
-hostname = %INSERT% act.10010.com, m.client.10010.com
+hostname = %APPEND% m.client.10010.com
