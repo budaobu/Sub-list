@@ -1,4 +1,4 @@
-#!name=Special Hostname
+#!name=Hostname
 #!desc=指定域名DNS
 
 [Host]
