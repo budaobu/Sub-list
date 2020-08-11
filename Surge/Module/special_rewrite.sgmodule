@@ -1,4 +1,4 @@
-#!name=Special Rewrite
+#!name=Rewrite
 #!desc=重写请求的 URL，或者通过 URL 拒绝某些请求。
 
 // --- URL Rewrite and Header Rewrite ---
