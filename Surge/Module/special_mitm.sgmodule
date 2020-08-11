@@ -1,4 +1,4 @@
-#!name=MitM Special Hostnames
+#!name=MitM
 #!desc=此Module仅会解密这里指定的主机名（默认发往433端口上的请求执行MitM）的请求，主要包含URL Rewrite请求部分，您任然需要配置CA证书并启用Mitm开关。
 #!system=ios
 
