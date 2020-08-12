@@ -9,6 +9,8 @@ hostname = %APPEND% www.google.cn, api.xueqiu.com, promo.xueqiu.com, 182.92.251.
 # > Google_Service_HTTPS_Jump
 ^https?://(www.)?g.cn https://www.google.com 302
 ^https?://(www.)?google.cn https://www.google.com 302
+# Redirect Google Maps Service
+^(http|https):\/\/(ditu|maps).google\.cn https://maps.google.com 302
 # Redirect HTTP to HTTPS
 ^https?:\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
 ^https?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
