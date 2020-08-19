@@ -1,0 +1,6 @@
+#!name=PSN会员限免
+#!desc=每月PSN会员限免游戏提醒
+#!system=ios
+
+[Script]
+PSN会员限免 = type=cron,cronexp=0 9 1 * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/psn.js
