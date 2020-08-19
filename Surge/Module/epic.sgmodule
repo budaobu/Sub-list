@@ -1,0 +1,9 @@
+#!name=Epic限免
+#!desc=每周Epic游戏限免提醒
+#!system=ios
+
+[Rule]
+domain,rsshub.app,Proxy
+
+[Script]
+每周Epic游戏限免提醒 = type=cron,cronexp=55 23 ? * THU,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/epic.js
