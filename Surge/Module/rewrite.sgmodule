@@ -82,6 +82,8 @@ hostname = %APPEND% www.google.cn, api.xueqiu.com, promo.xueqiu.com, 182.92.251.
 ^(http|https):\/\/m\.tuniu\.com\/api\/operation\/splash\/ - reject
 # > TVBCLive - mob.mddcloud.com
 ^(http|https):\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ - reject
+# > IDM
+^(http|https):\/\/(www.)?idmchina\.net\/ https://www.internetdownloadmanager.com/ 302
 
 [Header Rewrite]
 # 百度贴吧
