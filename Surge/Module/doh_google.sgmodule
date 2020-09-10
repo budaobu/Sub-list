@@ -4,7 +4,7 @@
 [General]
 doh-format = wireformat
 doh-server = https://dns.google/dns-query
-dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
+# dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
 
 [Rule]
 PROTOCOL,DOH,Proxy
