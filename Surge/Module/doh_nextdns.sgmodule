@@ -4,7 +4,7 @@
 [General]
 always-real-ip = %APPEND% link-ip.nextdns.io
 doh-format = wireformat
-doh-server = https://dns.nextdns.io/7789d5
+doh-server = https://dns.nextdns.io/7789d5/iPhone
 # dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
 dns-server = 45.90.28.87, 45.90.30.87, 2a07:a8c0::77:89d5, 2a07:a8c1::77:89d5
 
