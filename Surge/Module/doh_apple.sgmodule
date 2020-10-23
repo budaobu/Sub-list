@@ -6,7 +6,3 @@ doh-format = wireformat
 doh-follow-outboound-mode = true
 doh-server = https://doh.dns.apple.com/dns-query
 # dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
-
-[Rule]
-# > 本身通过代理策略访问的域名就是在代理服务器进行解析，此参数仅给有特殊需求的用户设计，一般用户不应该开启。
-# PROTOCOL,DOH,Proxy
