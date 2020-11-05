@@ -1,3 +1,6 @@
+/*******
+* Copy from:https://gist.github.com/bsehovac/60da2fa1c541e7aa89cdba1beeb9a584
+*/
 const TEAM_ID = 133667 // AC Milan
 const DARK_MODE = true
 
