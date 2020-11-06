@@ -27,7 +27,5 @@ DOMAIN-SUFFIX,tendawifi.com
 DOMAIN-SUFFIX,zte.home
 DOMAIN,router.asus.com
 
-# > 腾讯系应用使用的某些 IP 被最近版本的 GeoLite2 Country 识别为越南，可根据自己使用情况添加分流规。
-IP-CIDR,182.254.116.0/24,DIRECT
 # > Surge 的自动 REJECT 保护丢包，防止应用循环请求
-IP-CIDR,0.0.0.0/32,REJECT
+IP-CIDR,0.0.0.0/32
