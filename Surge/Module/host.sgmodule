@@ -4,6 +4,8 @@
 [Host]
 ip6-localhost = ::1
 ip6-loopback = ::1
+doh.pub = server:119.29.29.29
+dns.alidns.com = server:223.5.5.5
 taobao.com = server:https://dns.alidns.com/dns-query?
 *.taobao.com = server:https://dns.alidns.com/dns-query?
 tmall.com = server:https://dns.alidns.com/dns-query?
