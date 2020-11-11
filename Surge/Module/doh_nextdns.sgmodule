@@ -15,6 +15,32 @@ dns-server = 45.90.28.87, 45.90.30.87, 2a07:a8c0::77:89d5, 2a07:a8c1::77:89d5
 [Host]
 # > NextDNS (https://nextdns.io/)
 link-ip.nextdns.io = server:45.90.28.87, 45.90.30.87, 2a07:a8c0::77:89d5, 2a07:a8c1::77:89d5
+# > custom
+ip6-localhost = ::1
+ip6-loopback = ::1
+doh.pub = server:119.29.29.29
+dns.alidns.com = server:223.5.5.5
+taobao.com = server:https://dns.alidns.com/dns-query?
+*.taobao.com = server:https://dns.alidns.com/dns-query?
+tmall.com = server:https://dns.alidns.com/dns-query?
+*.tmall.com = server:https://dns.alidns.com/dns-query?
+jd.com = server:https://doh.pub/dns-query
+*.jd.com = server:https://doh.pub/dns-query
+*.qq.com = server:https://doh.pub/dns-query
+*.tencent.com = server:https://doh.pub/dns-query
+*.alicdn.com = server:https://dns.alidns.com/dns-query?
+aliyun.com = server:https://dns.alidns.com/dns-query?
+*.aliyun.com = server:https://dns.alidns.com/dns-query?
+weixin.com = server:https://doh.pub/dns-query
+*.weixin.com = server:https://doh.pub/dns-query
+bilibili.com = server:https://doh.pub/dns-query
+*.bilibili.com = server:https://doh.pub/dns-query
+routerlogin.net = server:system
+_hotspot_.m2m = server:system
+router.asus.com = server:system
+hotspot.cslwifi.com = server:system
+amplifi.lan = server:system
+*.lan = server:system
 
 [Script]
 # > NextDNS
