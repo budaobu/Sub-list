@@ -2,10 +2,14 @@
 #!desc=指定域名DNS
 
 [Host]
+# > custom
 ip6-localhost = ::1
 ip6-loopback = ::1
 doh.pub = server:119.29.29.29
 dns.alidns.com = server:223.5.5.5
+*.futunn.com = server:https://doh.pub/dns-query
+*.moomoo.com = server:https://doh.pub/dns-query
+*.futu5.com = server:https://doh.pub/dns-query
 taobao.com = server:https://dns.alidns.com/dns-query?
 *.taobao.com = server:https://dns.alidns.com/dns-query?
 tmall.com = server:https://dns.alidns.com/dns-query?
@@ -19,6 +23,7 @@ aliyun.com = server:https://dns.alidns.com/dns-query?
 *.aliyun.com = server:https://dns.alidns.com/dns-query?
 weixin.com = server:https://doh.pub/dns-query
 *.weixin.com = server:https://doh.pub/dns-query
+*.weixinbridge.com = server:https://doh.pub/dns-query
 bilibili.com = server:https://doh.pub/dns-query
 *.bilibili.com = server:https://doh.pub/dns-query
 routerlogin.net = server:system
