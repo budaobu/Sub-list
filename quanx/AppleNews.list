@@ -1,0 +1,6 @@
+# > Apple Music
+USER-AGENT,Music*,PROXY
+DOMAIN,aod.itunes.apple.com,PROXY
+DOMAIN,mvod.itunes.apple.com,PROXY
+DOMAIN,streamingaudio.itunes.apple.com,PROXY
+DOMAIN,tv.applemusic.com,PROXY   // Apple Music TV avaliable in US.
