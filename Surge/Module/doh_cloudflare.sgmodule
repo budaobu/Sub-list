@@ -5,7 +5,11 @@
 doh-format = wireformat
 doh-follow-outboound-mode = true
 doh-server = https://cloudflare-dns.com/dns-query
-# dns-server = 1.1.1.1, 2400:3200::1, 2400:3200:baba::1
+# dns-server = 1.1.1.1, 1.0.0.1
 
 [Rule]
 # PROTOCOL,DOH,Proxy
+
+[Host]
+# > Cloudflare
+cloudflare-dns.com = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001
