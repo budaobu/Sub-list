@@ -24,8 +24,8 @@
  */
 
 let config = {
-  global_direct: "DIRECT",
-  global_proxy: "Proxy",
+  global_direct: "🌐Direct",
+  global_proxy: "🌑Proxy",
   silence: true, // 是否静默运行，默认false
   cellular: "DIRECT", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
   wifi: "RULE", // wifi下默认的模式
