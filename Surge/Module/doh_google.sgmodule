@@ -1,11 +1,15 @@
 #!name = DoH Google
-#!desc = 使用Google DNS-over-HTTPS (DoH)
+#!desc = Google Public DNS(https://developers.google.com/speed/public-dns/docs/intro).
 
 [General]
 doh-format = wireformat
 doh-follow-outboound-mode = true
 doh-server = https://dns.google/dns-query
-# dns-server = 8.8.8.8, 2400:3200::1, 2400:3200:baba::1
+# dns-server = 8.8.8.8, 8.8.4.4
 
 [Rule]
 # PROTOCOL,DOH,Proxy
+
+[Host]
+# > Google Public DNS
+dns.google = server:8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
