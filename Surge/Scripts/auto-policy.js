@@ -26,7 +26,7 @@
 let config = {
   global_direct: "♲ 𝐃𝐢𝐫𝐞𝐜𝐭",
   global_proxy: "𝑷𝒓𝒐𝒙𝒚",
-  silence: false, // 是否静默运行，默认false
+  silence: true, // 是否静默运行，默认false
   cellular: "RULE", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
   wifi: "RULE", // wifi下默认的模式
   all_direct: ["WRT32X", "WRT32X Extreme"], // 指定全局直连的wifi名字
