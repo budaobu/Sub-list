@@ -1,5 +1,5 @@
-#!name = Google Public DNS
-#!desc = Google Public DNS(https://developers.google.com/speed/public-dns/docs/intro).
+#!name = Google public DNS
+#!desc = Google public DNS(https://developers.google.com/speed/public-dns/docs/intro).
 
 [General]
 # > DoH
