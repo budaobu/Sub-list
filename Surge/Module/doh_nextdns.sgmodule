@@ -19,4 +19,5 @@ link-ip.nextdns.io = server:45.90.28.87, 45.90.30.87, 2a07:a8c0::77:89d5, 2a07:a
 
 [Script]
 # > NextDNS
-event network-changed script-path=Scripts/nextdns_linkedip.js
+event network-changed script-path=Scripts/NextDNS/nextdns_linkedip.js
+event network-changed script-path=Scripts/NextDNS/next-dns.js
