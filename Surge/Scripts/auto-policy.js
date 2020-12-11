@@ -25,7 +25,7 @@
 
 let config = {
   global_direct: "🌐Direct",
-  global_proxy: "🌑Proxy",
+  global_proxy: "HK",
   silence: true, // 是否静默运行，默认false
   cellular: "DIRECT", // 蜂窝数据下的模式，RULE代表规则模式，PROXY代表全局代理，DIRECT代表全局直连
   wifi: "RULE", // wifi下默认的模式
@@ -110,6 +110,7 @@ async function manager() {
 
   $persistentStore.write(targetMode, "surge_auto_policy_mode");
   if (!config.silence) {
+    // $notification.post(
     notify(
       "🤖️ SSID 自动策略",
       `当前网络：${ssid ? ssid : "蜂窝数据"}`,
