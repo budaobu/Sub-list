@@ -5,8 +5,8 @@
 # > DoH
 doh-format = wireformat
 doh-follow-outboound-mode = true
+dns-server = 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
 doh-server = https://dns.google/dns-query
-# dns-server = 8.8.8.8, 8.8.4.4
 
 [Rule]
 # PROTOCOL,DOH,Proxy
