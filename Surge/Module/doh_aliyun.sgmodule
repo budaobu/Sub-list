@@ -4,5 +4,5 @@
 [General]
 doh-format = wireformat
 doh-follow-outboound-mode = true
-dns-server = 223.5.5.5, 223.6.6.6
+dns-server = 2400:3200::1, 2400:3200:baba::1, 223.5.5.5, 223.6.6.6
 doh-server = https://dns.alidns.com/dns-query
