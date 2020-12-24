@@ -2,7 +2,7 @@
 #!desc = Google public DNS(https://developers.google.com/speed/public-dns/docs/intro).
 
 [General]
-dns-server = 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
+dns-server = 2001:4860:4860::8888, 2001:4860:4860::8844, 8.8.8.8, 8.8.4.4
 # > DoH
 doh-format = wireformat
 doh-follow-outboound-mode = true
@@ -13,4 +13,4 @@ doh-server = https://dns.google/dns-query
 
 [Host]
 # > DNS
-dns.google = server:8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
+dns.google = server:2001:4860:4860::8888, 2001:4860:4860::8844, 8.8.8.8, 8.8.4.4
