@@ -1,0 +1,18 @@
+# > Apple News
+# > 使用方法：
+# > 1. 连接「Wi-Fi」
+# > 2. 开启「飞行模式」
+# > 3. 打开「地图」应用，直到应用中的「高德地图」标消失
+# > 4. 打开「News」应用
+DOMAIN,gspe1-ssl.ls.apple.com // 必要，但会导致「地图」使用「TOMTOM」版本数据
+PROCESS-NAME,News,PROXY
+USER-AGENT,AppleNews*,PROXY
+USER-AGENT,News*,PROXY // 「今日头条」亦使用UA
+DOMAIN,gateway.icloud.com,PROXY
+USER-AGENT,com.apple.news*,PROXY
+DOMAIN-SUFFIX,apple.news,PROXY
+DOMAIN,news-assets.apple.com,PROXY
+DOMAIN,news-client.apple.com,PROXY
+DOMAIN,news-edge.apple.com,PROXY
+DOMAIN,news-events.apple.com,PROXY
+DOMAIN,apple.comscoreresearch.com,PROXY
